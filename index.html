@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/style1.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Document</title>
+</head>
+<body class="body">
+	<div class="main-container" id="container">
+		<div class="child personal-info-container ">
+			<div class="layer d-flex flex-column justify-content-center align-items-center">
+				<div class="resume-menu-sm d-md-none p-3" id="resume-menu-sm">
+				    <p><i class="fas fa-bars"></i></p>
+			    </div>
+				<h1>Soozi Brayan</h1>
+                <div class="slideshow mt-3">
+                    <div class="slides fade-in" id="first-image">
+                        <span>As a Web Developer</span>
+                    </div>
+                    <div class="slides" id="second-image">        
+                        <span>As a UI Designer</span>
+                    </div>
+                    <div class="slides" id="third-image">
+                        <span>As a Logo Designer</span>
+                    </div>
+                    <div class="slides" id="third-image">
+                        <span>As a Graphic Designer</span>
+                    </div>
+                </div>
+                <div class="social-container">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+                    </ul>
+                </div>                   				
+			    <button class="btn mt-3" id="about-me">Read More About Me</button>
+			    <div class="info-container p-md-5 p-3" id="info-container">
+			    	<div class="my-info" >
+			    		<div >
+			    			<h1>About Me</h1>
+			    		</div>
+			    		<div class="pt-3">
+			    		    <p>I am a UI/UX Designer & Web Developer from Orchard Street, Singapore. I am very passionate and dedicated to my work. I have 5 years more work experience. And enjoy working in a team or individual.</p>
+			    		</div>
+			    		<div class="pt-3">
+			    		    <ul>
+			    		    	<li><span>Name :</span> Soozi Brayan</li>
+			    		    	<li><span>Age :</span> 28</li>
+			    		    	<li><span>Residance :</span> singapore</li>
+			    		    	<li><span>email :</span> soozi@gmail.com</li>
+			    		    	<li><span>Address :</span> 24 orchrad street, singapore</li>
+			    		    	<li><span>Phone :</span> 09888888</li>
+			    		    </ul>
+			    		</div>
+                        <div class="social-container pt-3">
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="skills-container mt-4 w-100 p-2">
+                        	<div class="skill-card w-100 py-4 px-3">
+                        		<h4 class="pl-2">Web Design</h4>
+                        		<p class="mt-2">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Temporibus esse quaerat ullam distinctio magni blanditiis at explicabo quod iure sit, architecto veritatis</p>
+                        	</div>
+                        	<div class="skill-card w-100 py-4 px-3">
+                        		<h4 class="pl-2">Graphic Design</h4>
+                        		<p class="mt-3">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Temporibus esse quaerat ullam distinctio magni blanditiis at explicabo quod iure sit, architecto veritatis</p>
+                            </div>
+                        	<div class="skill-card w-100 py-4 px-3">
+                        		<h4 class="pl-2">Logo Design</h4>
+                        		<p class="mt-3">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Temporibus esse quaerat ullam distinctio magni blanditiis at explicabo quod iure sit, architecto veritatis</p>                        	
+                        	</div>
+                        	<div class="skill-card w-100 py-4 px-3">
+                        		<h4 class="pl-2">UI/UX Design</h4>
+                        		<p class="mt-3">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Temporibus esse quaerat ullam distinctio magni blanditiis at explicabo quod iure sit, architecto veritatis</p>                        	
+                        	</div>
+                        </div>
+			    		<div class="mt-3">
+			    			<p class="text-right">
+			    				<i class="fas fa-times fa-2x pr-3 close-btn" id="close-btn"></i>
+			    			</p>
+			    		</div>			    		    
+			    	</div>	
+			    </div>
+			</div>    
+		</div>
+		<div class="child resume-container ">
+			<div class="resume-links-container d-flex flex-column justify-content-center align-items-center">
+				<a href="#resume" class="resume-link py-3 text-center mt-3" data-target="resume-card-container"><i class="fas fa-graduation-cap pr-2 fa-lg"></i> My Resume</a>
+			    <a href="#portfolio" class="resume-link py-3 text-center mt-3" data-target="portfo-card-container"><i class="fas fa-briefcase pr-2 fa-lg"></i> My Portfolio</a>
+			    <a href="#blog" class="resume-link py-3 text-center mt-3" data-target="blog-card-container"><i class="fas fa-blog pr-2 fa-lg"></i>  My Blog</a>
+			    <a href="#contact" class="resume-link py-3 text-center mt-3" data-target="contact-card-container"><i class="fas fa-file-signature fa-lg"></i> Contact Me</a>
+			    <a href="#aboutme" class="info-sm-btn py-3 text-center mt-3 d-md-none" id="info-sm-btn">About Me</a>			    
+			</div>
+			<div class="resume-cards-container" id="resume-cards-container">
+	            <div class="cards-container">
+		            <div class="info-card resume-card-container pl-5 pr-3 py-5 p-sm-5" id="resume-card-container">
+		            	<div class="education-container mb-5 pb-5">
+		            		<h3 class="w-100 text-left mb-3">Education</h3>
+		            		<div class="education-content px-3 d-flex">
+		            			<div class="ribbon text-center">
+		            				<strong class="ribbon-content">2000 - 2002</strong>
+		            			</div>
+		            			<div class="mt-3">
+		            				<span class="mt-5 mb-1">software engeeniering</span>
+		            			    <span class="mb-2"><i class="fas fa-university fa-lg"></i> harward university</span>
+		            			    <p>
+		            			    	Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis culpa voluptatem nemo, ipsam ab minus totam laudantium quo maxime.
+		            			    </p>
+		            			</div>
+		            		</div>
+		            		<div class="education-content px-3 mt-5 d-flex">
+		            			<div class="ribbon text-center">
+		            				<strong class="ribbon-content">2002 - 2004</strong>
+		            			</div>
+		            			<div class="mt-3">
+		            				<span class="mt-5 mb-1">Mobile App Development</span>
+		            			    <span class="mb-2"><i class="fas fa-university fa-lg"></i> oxford university</span>
+		            			    <p>
+		            			    	Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis culpa voluptatem nemo, ipsam ab minus totam laudantium quo maxime.
+		            			    </p>
+		            			</div>    
+		            		</div>
+		            		<div class="education-content px-3 mt-5 d-flex">
+		            			<div class="ribbon text-center">
+		            				<strong class="ribbon-content">2004 - 2006</strong>
+		            			</div>
+		            			<div class="mt-3">
+		            				<span class="mt-5 mb-1">Web Development</span>
+		            			    <span class="mb-2"><i class="fas fa-university fa-lg"></i> oxford university</span>
+		            			    <p>
+		            			    	Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis culpa voluptatem nemo, ipsam ab minus totam laudantium quo maxime.
+		            			    </p>
+		            			</div>    
+		            		</div>
+		            	</div>
+		            	<div class="exprience-container w-100 mb-5">
+		            		<h3 class="w-100 text-left">Exprience</h3>
+		            		<div class="exprience mt-3">
+		            			<div class="priod p-3 d-flex align-items-center justify-content-center">
+		            				<strong>2006 - 2010</strong>
+		            			</div>
+		            			<div class="exprience-info py-3 px-4 rounded">
+		            				<h5>Web Designing</h5>
+		            				<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. </p>
+		            			</div>
+		            		</div>
+		            		<div class="exprience">
+		            			<div class="priod p-3 d-flex align-items-center justify-content-center">
+		            				<strong>2010 - 2014</strong>
+		            			</div>
+		            			<div class="exprience-info py-3 px-4 rounded">
+		            				<h5>UI/UX Design</h5>
+		            				<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. </p>
+		            			</div>
+		            		</div>
+		            		<div class="exprience">
+		            			<div class="priod p-3 d-flex align-items-center justify-content-center">
+		            				<strong>2014 - Today</strong>
+		            			</div>
+		            			<div class="exprience-info py-3 px-4 rounded">
+		            				<h5>Graphic Design</h5>
+		            				<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit.</p>
+		            			</div>
+		            		</div>
+		            	</div>
+		            	<div class="certificate-container mt-3">
+		            		<h3>Certificate</h3>
+		            		<div class="certificate-content mt-3">
+		            			<div class="certificate text-center">
+		            				<p class="date w-100 text-center p-2"><strong>15 June 2015</strong></p>
+		            				<p class="mt-2">phsycology of Web Designing</p>
+		            			</div>
+		            			<div class="certificate text-center">
+		            				<p class="date w-100 text-center p-2"><strong> 22 April 2018</strong></p>
+		            				<p class="mt-2">phsycology of Web Designing</p>
+		            			</div>
+		            		</div>
+		            	</div>
+		            	<button class="card-closer rounded-left py-1"><i class="fas fa-times-circle p-2 fa-lg" data-target="resume-card-container"></i></button>
+		            </div>
+		            <div class="info-card portfo-card-container pt-5" id="portfo-card-container">
+		            	<div class="p-5">
+		            		<h1>My Portfolio</h1>
+		            		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+		            		<div class="my-projects">
+		            			<div class="project-card">
+		            				<img src="./images/img1.jpg" alt="image">
+		            				<h4 class="title">My Photography</h4>
+		            				<div class="card-overlay d-flex flex-column justify-content-center align-items-center">
+		            					<h5>My Photography</h5>
+		            					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+		            				</div>
+		            			</div>
+		            			<div class="project-card">
+		            				<img src="./images/img2.jpg" alt="image">
+		            				<h4 class="title">My Photography</h4>
+		            				<div class="card-overlay d-flex flex-column justify-content-center align-items-center">
+		            					<h5>My Photography</h5>
+		            					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+		            				</div>
+		            			</div>
+		            			<div class="project-card">
+		            				<img src="./images/img3.jpg" alt="image">
+		            				<h4 class="title">My Photography</h4>
+		            				<div class="card-overlay d-flex flex-column justify-content-center align-items-center">
+		            					<h5>My Photography</h5>
+		            					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+		            				</div>
+		            			</div>
+		            			<div class="project-card">
+		            				<img src="./images/img4.jpg" alt="image">
+		            				<h4 class="title">My Photography</h4>
+		            				<div class="card-overlay d-flex flex-column justify-content-center align-items-center">
+		            					<h5>My Photography</h5>
+		            					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+		            				</div>
+		            			</div>
+		            			<div class="project-card">
+		            				<img src="./images/img5.jpeg" alt="image">
+		            				<h4 class="title">My Photography</h4>
+		            				<div class="card-overlay d-flex flex-column justify-content-center align-items-center">
+		            					<h5>My Photography</h5>
+		            					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+		            				</div>
+		            			</div>
+		            			<div class="project-card">
+		            				<img src="./images/img6.jpg" alt="image">
+		            				<h4 class="title">My Photography</h4>
+		            				<div class="card-overlay d-flex flex-column justify-content-center align-items-center">
+		            					<h5>My Photography</h5>
+		            					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+		            				</div>
+		            			</div>
+		            		</div>
+		            	</div>
+		            	<button class="card-closer rounded-left py-1"><i class="fas fa-times-circle p-2 fa-lg" data-target="portfo-card-container"></i></button>		            
+		            </div>
+		            <div class="info-card blog-card-container py-5" id="blog-card-container">
+		            	<div class="px-4 py-5">
+		            	    <h2 class="pb-2">Latest Blogs</h2>
+		            		<div class="blog-card wrapper rounded mt-4">
+                                <div class="card-layer top">
+                                	<div class="blog-date">
+                                		<div class="blog-body">
+                                			<h5>John Doe</h5>
+                                			<span>June 2018</span>
+                                			<span>1 comment</span>
+                                			<img src="./images/Group159.png" alt="">
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="card-layer bottom">
+                                	<div class="blog-info p-5">
+                                		<div class="blog-body">
+                                			<h3>UI Design</h3>
+                                			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maxime eaque similique, architecto porro laboriosam tempora asperiores sint enim iure molestias necessitatibus quasi molestiae doloribus suscipit, harum quae quis, laborum.</p>
+                                			<img src="./images/Group161.png" alt="">
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="handle"></div>
+		            		</div>
+		            		<div class="blog-card wrapper rounded mt-5">
+                                <div class="card-layer top">
+                                	<div class="blog-date">
+                                		<div class="blog-body">
+                                			<h5>John Doe</h5>
+                                			<span>June 2018</span>
+                                 			<span>1 comment</span>   
+                                 			<img src="./images/Group159.png" alt="">                                			                         
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="card-layer bottom">
+                                	<div class="blog-info p-5">
+                                		<div class="blog-body">
+                                			<h3>UI Design</h3>
+                                			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maxime eaque similique, architecto porro laboriosam tempora asperiores sint enim iure molestias necessitatibus quasi molestiae doloribus suscipit, harum quae quis, laborum.</p>
+                                			<img src="./images/Group161.png" alt="">
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="handle"></div>
+		            		</div>
+		            		<div class="blog-card wrapper rounded mt-5">
+                                <div class="card-layer top">
+                                	<div class="blog-date">
+                                		<div class="blog-body">
+                                			<h5>John Doe</h5>
+                                			<span>June 2018</span>
+                                 			<span>1 comment</span>
+                                 			<img src="./images/Group159.png" alt="">                               			
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="card-layer bottom">
+                                	<div class="blog-info p-5">
+                                		<div class="blog-body">
+                                			<h3>UI Design</h3>
+                                			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maxime eaque similique, architecto porro laboriosam tempora asperiores sint enim iure molestias necessitatibus quasi molestiae doloribus suscipit, harum quae quis, laborum.</p>
+                                		    <img src="./images/Group161.png" alt="">
+                                		</div>
+                                	</div>
+                                </div>
+                                <div class="handle"></div>
+		            		</div>		            				            		
+		            	</div>
+		            	<button class="card-closer rounded-left py-1"><i class="fas fa-times-circle p-2 fa-lg" data-target="blog-card-container"></i></button>
+		            </div>
+		            <div class="info-card contact-card-container pt-5" id="contact-card-container">
+		            	<div class="contact-container w-100 p-5">
+		            		<div class="contact-info-container d-grid-1 d-grid-3 text-center">
+		            			<div class="contact-info rounded">
+		            				<p class="py-1 rounded"><i class="fas fa-map-marker-alt"></i></p>
+		            				<p><strong>Office Adress</strong></p>
+		            				<p>120,Orchard Street</p>
+		            			</div>
+		            			<div class="contact-info rounded">
+		            				<p class="py-1 rounded"><i class="far fa-envelope"></i></p>
+		            				<p><strong>Email Us</strong></p>
+		            				<p>saarang@gmail.com</p>
+		            			</div>
+		            			<div class="contact-info rounded">
+		            				<p class="py-1 rounded"><i class="fas fa-mobile-alt"></i></p>
+		            				<p><strong>Call Us</strong></p>
+		            				<p>+99999999</p>
+		            			</div>
+		            		</div>
+		            		<form action="" class="mt-4">
+		            			<input type="text" id="name" class="w-100 p-2 rounded" placeholder="Enter Your Name" required>
+                                <div class="d-grid-1 d-grid-2 w-100 mt-2">
+                                    <input type="text" id="email" class="p-2 rounded" placeholder="Enter Your Email" required>
+                                    <input type="text" id="subject" class="p-2 rounded" placeholder="Enter Your Subject" required>
+                                </div>
+		            			<textarea id="message" class="w-100 p-2 mt-2 rounded" placeholder="Message" required></textarea>
+		            			<button type="submit" class="mt-3 w-100 btn" id="submit">Send</button>
+		            		</form>
+		            	</div>
+		            	<button class="card-closer rounded-left py-1"><i class="fas fa-times-circle p-2 fa-lg" data-target="contact-card-container"></i></button>  
+		            </div>
+	            </div>
+            </div>    
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<img src="./images/Group162.png" alt="">
+					<p class="mt-4">I am very passionate and dedicated to my work</p>
+                    <div class="social-container mt-4">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+                        </ul>
+                    </div> 					
+					<button class="btn mt-4" id="resume">About Me</button>
+                    <div class="resume-menu mt-5" id="resume-menu">
+        	            <ul class="d-flex">
+        		            <li class="p-3">
+        		            	<a href="#resume" class="resume-item" >
+        		            	    <i class="fas fa-graduation-cap fa-lg" data-target="resume-card-container"></i>
+        		                </a>
+        		                <span class="qoute p-2">My Resume</span>
+        		            </li>
+        		            <li class="p-3">
+        		            	<a href="#portfolio" class="resume-item" >
+        		            		<i class="fas fa-briefcase fa-lg" data-target="portfo-card-container"></i>
+        		            	</a>
+         		            	<span class="qoute p-2">My Portfolio</span>       		            		        		            	
+        		            </li>
+        		            <li class="p-3">
+        		            	<a href="#blog" class="resume-item" >
+        		            		<i class="fas fa-blog fa-lg" data-target="blog-card-container"></i>
+        		            	</a>
+        		            	<span class="qoute p-2">My Blog</span>        		            	
+        		            </li>
+        		            <li class="p-3">
+        		            	<a href="#contact" class="resume-item" >
+        		            		<i class="fas fa-file-signature fa-lg" data-target="contact-card-container"></i>
+        		            	</a>
+         		                <span class="qoute p-2">Contact Me</span>       		            	
+        		            </li>
+        	            </ul>
+                    </div>					
+				</div>
+				<div class="overlay-panel overlay-right">
+					<img src="./images/Group160.png" alt="">
+					<p>I have 5 years more work experience</p>	
+                    <button class="btn" id="info">My Resume</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="./js/script.js"></script>	
+    <script src="https://kit.fontawesome.com/27107847e4.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
+</body>
+</html>
