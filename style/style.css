@@ -38,6 +38,31 @@ li {
   list-style: none;
 }
 
+.color-customizer {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  background-color: var(--gray-color);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.color-header {
+  color: var(--link-color);
+  font-size: 24px
+}
+
+.color-options {
+  margin-bottom: 0;
+  color: var(--white);
+  display: none;
+}
+
+.color-options li {
+  cursor: pointer;
+}
+
+
 .main-container {
   width: 80%;
   margin: auto;
@@ -527,7 +552,7 @@ li {
 }
 
 .personal-info-container {
-  background: url('../images/image.jpg') no-repeat center center;
+  background: url('../images/img.jpg') no-repeat center center;
   background-size: cover;
   left: 0;
   width: 65%;
@@ -630,24 +655,31 @@ li {
 
 .nav-link {
   color: var(--link-color);
+  font-size: 24px
 }
 
 .nav-link:hover {
   transform: scale(1.1);
 }
 
+.resume-btn {
+  margin-top: -100px
+}
+
+
 #about-me,
-#resume,
+#resume-btn,
 #info {
+  font-size: 18px;
   color: var(--btn-color);
-  background-color: var(--btn-bg);
+  border-bottom: 2px solid var(--btn-bg);
 }
 
 #about-me:hover,
-#resume:hover,
+#resume-btn:hover,
 #info:hover {
   color: var(--text-color);
-  box-shadow: 0px 1px 7px 4px var(--card-bg);
+  box-shadow: 0px 0px 7px 0px var(--card-bg);
 }
 
 button:active {

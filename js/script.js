@@ -2,7 +2,7 @@ const infoBtn = document.getElementById("info");
 const infoSmBtn = document.getElementById("info-sm-btn");
 const resumeBtnSm = document.getElementById("resume-menu-sm");
 const InfoFadeInBtn = document.getElementById("about-me");
-const showResumeBtn = document.getElementById("resume");
+const showResumeBtn = document.getElementById("resume-btn");
 const container = document.getElementById("container");
 const infoContainer = document.getElementById("info-container");
 const closeBtn = document.getElementById("close-btn");
@@ -62,6 +62,7 @@ function toggleCard(e) {
 	document.getElementById(e.target.dataset.target).classList.toggle('active-card');
 	resumeCardsContainer.classList.toggle('active-container');
 	resumeEl.classList.toggle('visible');
+	$(".resume-btn").toggleClass('translate');
 }
 
 
@@ -72,7 +73,6 @@ $('.resume-item').click((e) =>
 
 function cardChanger(e) {
 	document.getElementsByClassName('active-card')[0].classList.remove('active-card');
-	console.log(document.getElementById(e.target.dataset.target));
 	document.getElementById(e.target.dataset.target).classList.add('active-card');
 }
 
@@ -94,3 +94,12 @@ function showTitle() {
 	};
 
 };
+
+
+$(document).ready(function () {
+	$(".color-customizer").hover(function () {
+		$(".color-options").slideToggle('slow');
+		//$(".main").toggleClass("main-full");
+})
+});
+
