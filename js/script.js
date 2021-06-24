@@ -9,19 +9,6 @@ const closeBtn = document.getElementById("close-btn");
 const resumeEl = document.getElementById("resume-menu");
 const resumeCardsContainer = document.getElementById('resume-cards-container');
 
-document.addEventListener('DOMContentLoaded', function () {
-	let skew = 1000;
-
-	document.querySelectorAll(".wrapper").forEach(wrapper => {
-		wrapper.addEventListener('mousemove', function (e) {
-			var relX = event.pageX - $(this).offset().left;
-			wrapper.querySelector('.handle').style.left = relX + 'px';
-			wrapper.querySelector('.top').style.width = relX + skew + 'px'
-
-		})
-	})
-
-})
 
 
 infoBtn.addEventListener('click', () =>
@@ -97,9 +84,24 @@ function showTitle() {
 
 
 $(document).ready(function () {
+
+
 	$(".color-customizer").hover(function () {
 		$(".color-options").slideToggle('slow');
-		//$(".main").toggleClass("main-full");
-})
+   })
+
+
+
+    $(".more-info-btn" ).each(function() {
+        $(this).click(function () {
+    	$(this).parent().parent().find(".blog-more-info").slideToggle('slow');
+    	$(this).parent().toggleClass('rotate');
+    })
+    });
+
+
 });
+
+
+
 

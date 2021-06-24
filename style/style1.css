@@ -2,10 +2,10 @@
 :root {
   --white: #fff;
   --body-bg: #f2f2f2;
-  --card-bg: #a3a3c2;
+  --card-bg: #c2c2d6;
   --light-color: #c2c2d6;
   --btn-color: #8197b1;
-  --text-color: #6a6d7c;
+  --text-color: #c2c2d6;
   --link-color: #9494b8;
   --dark-color: #666699;
   --link-hover: #ff9900;
@@ -30,8 +30,6 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--body-bg);
   position: relative;
-  background: url(../images/new4.png) no-repeat;
-  background-size: cover;
 }
 
 li {
@@ -70,7 +68,8 @@ li {
   box-shadow: 0px 1px 40px 20px #e4e6ef;
   position: relative;
   overflow: hidden;
-  height: 90vh
+  height: 90vh;
+  box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
 }
 
 .child {
@@ -163,6 +162,7 @@ li {
   width: 100%;
   height: 100%;
   position: absolute;
+  color: var(--heading);
   background-color: #4376d6;
   opacity: 0;
   transition: all 1.5s;
@@ -215,121 +215,136 @@ li {
 .education-content {
   position: relative;
   border-radius: 6px;
-  background-color: var(--card-bg);
-  box-shadow: 3px 3px 3px lightgray;
+  box-shadow: 1px 1px 5px lightgray;
+}
+
+.education-content:nth-child(2), .exprience:nth-child(2) .exprience-info, .blog-card:nth-child(2) {
+  border-bottom:  2px solid  #ff0000;
+  border-right:  2px solid  #ff0000;
+}
+
+.education-content:nth-child(3), .exprience:nth-child(3) .exprience-info, .blog-card:nth-child(3) {
+  border-bottom: 2px solid var(--link-hover);
+  border-right:  2px solid  var(--link-hover);
+}
+
+
+.education-content:last-child, .exprience:last-child .exprience-info, .certificate, .blog-card:last-child {
+  border-bottom: 2px solid #00bfff;
+  border-right:  2px solid  #00bfff;
 }
 
 .education-content span {
-  color: var(--heading)
+  color: var(--dark-color)
 }
 
 .blog-card-container h2 {
   border-bottom: 3px solid var(--link-color)
 }
 
-.wrapper {
+.blog-card {
   position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  box-shadow: 3px 3px 3px lightgrey
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  grid-gap: 50px;
+  box-shadow: 1px 1px 5px lightgrey;
+  border-radius: 6px;
+  margin-top: 100px;
 }
 
-.card-layer {
+.blog-img {
+  position: relative;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 250px;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  top: -30px;
+  left: 20px;
+  -webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75)
 }
 
-.card-layer.top {
-  z-index: 2;
-  width: 50%;
+.blog-author {
+  border-bottom: 2px solid var(--text-color)
 }
 
-.card-layer.bottom {
-  background-color: #6c7893;
-  color: #fff;
-  z-index: 1
-}
-.card-layer.bottom .blog-body h3 {
-  color: var(--heading)
+.blog-author img {
+  width: 30px;
 }
 
+.blog-more-info {
+  display: none;
+}
 
-.blog-date,
-.blog-info {
-  width: 100%;
-  height: 100%;
+.blog-more-info, .blog-tools {
+  grid-column: 1/3;
+}
+
+.blog-tools {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr 1fr;
+  grid-gap: 5px
+
 }
 
 .blog-date {
-  background-color: var(--card-bg);
+  margin-top: -50px;
+  font-size: 54px;
+  color: #6495ed;
+  font-weight: bold;
 }
 
-.card-layer .blog-body {
+.blog-date p:first-child {
+  font-size: 86px;
+}
+
+.blog-date p:last-child {
+  margin-top: -60px;
+}
+
+.blog-tools span {
+  width: 20px;
+  height: 20px;
+  font-size: 28px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.blog-tools span:hover {
+  color: var(--link-hover)
+}
+
+.blog-info-btn {
+  transform: rotateX(0deg);
+  transition: transform .5s ease;
+}
+
+.blog-info-btn.rotate {
+  transform: rotateX(180deg);
+}
+
+.blog-info-btn {
   position: absolute;
-  top: 35%;
-  transform: translateY(-50%);
+  right: 30px;
+  bottom:-35px;
 }
 
-.blog-body span {
-  display: block;
-  padding-bottom: 5px
+.blog-info-btn button {
+  width: 75px;
+  border-radius: 50%;
+  font-size: 40px;
 }
 
-.wrapper img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 180px;
-}
 
-.top img {
-  transform: translate(45%, 40%);
-}
 
-.bottom img {
-  transform: translate(-88%, 40%);
-}
 
-.blog-info .blog-body {
-  padding-left: 100px;
-}
 
-.blog-date .blog-body {
-  padding-left: 50px;
-  color: var(--heading)
-}
 
-.handle {
-  position: absolute;
-  width: 5px;
-  height: 100%;
-  display: block;
-  top: 0;
-  left: 50%;
-  z-index: 3;
-  background-color: var(--link-color);
-}
 
-.wrapper .handle {
-  top: 50%;
-  transform: rotate(30deg) translateY(-50%);
-  height: 200%;
-  transform-origin: top;
-}
-
-.wrapper .top {
-  transform: skew(-30deg);
-  margin-left: -1000px;
-  width: calc(50% + 1000px)
-}
-
-.wrapper .top .blog-date {
-  transform: skew(30deg);
-  margin-left: 1000px;
-}
 
 .contact-container form input,
 #message {
@@ -395,7 +410,7 @@ li {
 }
 
 .card-overlay h5 {
-  color: var(--link-color)
+  color: var(--link-hover)
 }
 
 .project-card:hover .card-overlay {
@@ -444,11 +459,11 @@ li {
 .ribbon {
   position: absolute;
   left: -16px;
-  top: 0;
+  top: -2px;
   font-size: 16px !important;
   width: 70%;
   background: var(--dark-color);
-  color: var(--link-color);
+  color: var(--white);
   padding: 10px 0;
   box-shadow: 2px 2px 5px #888888
 }
@@ -473,7 +488,7 @@ li {
   position: absolute;
   display: block;
   border-style: solid;
-  border-color: var(--dark-color) transparent transparent transparent;
+  border-color: var(--heading) transparent transparent transparent;
   bottom: -1em;
 }
 
@@ -491,6 +506,10 @@ li {
   color: var(--white)
 }
 
+.card-closer:hover {
+  color: var(--light-color)
+}
+
 .exprience {
   position: relative;
   margin-bottom: 50px;
@@ -500,7 +519,7 @@ li {
   width: 140px;
   height: 120px;
   background-color: var(--dark-color);
-  color: var(--link-color);
+  color: var(--white);
   border: 2px solid lightgray;
   z-index: 1
 }
@@ -521,9 +540,8 @@ li {
   height: 120px;
   top: 15px;
   left: 125px;
-  background-color: var(--card-bg);
   z-index: -1;
-  border: 2px solid lightgray;
+  box-shadow: 1px 1px 5px lightgrey
 }
 
 .exprience-info h5 {
@@ -532,7 +550,7 @@ li {
 
 .exprience-info p,
 .education-content p {
-  color: var(--text-color)
+  color: var(--dark-color)
 }
 
 .certificate-content {
@@ -544,18 +562,17 @@ li {
 }
 
 .certificate {
-  background-color: var(--card-bg);
   border-radius: 6px;
-  border: 2px solid lightgray;
+  box-shadow: 1px 1px 5px lightgrey
 }
 
 .certificate p:last-child {
-  color: var(--text-color)
+  color: var(--dark-color)
 }
 
 .date {
   background-color: var(--dark-color);
-  color: var(--link-color)
+  color: var(--white)
 }
 
 .personal-info-container {
@@ -870,7 +887,6 @@ button:focus {
 .resume-menu ul li:hover,
 .resume-menu ul li:hover a,
 .info-sm-btn:hover,
-.card-closer:hover,
 .overlay-left .nav-link:hover,
 .nav-link:hover,
 .my-info .nav-link:hover,
