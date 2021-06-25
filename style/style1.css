@@ -43,6 +43,7 @@ li {
   background-color: #33334d;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+  z-index: 10
 }
 
 .color-header {
@@ -218,18 +219,18 @@ li {
   box-shadow: 1px 1px 5px lightgray;
 }
 
-.education-content:nth-child(2), .exprience:nth-child(2) .exprience-info, .blog-card:nth-child(2) {
+.education-content:nth-child(2), .exprience:nth-child(2) .exprience-info {
   border-bottom:  2px solid  #ff0000;
   border-right:  2px solid  #ff0000;
 }
 
-.education-content:nth-child(3), .exprience:nth-child(3) .exprience-info, .blog-card:nth-child(3) {
+.education-content:nth-child(3), .exprience:nth-child(3) .exprience-info {
   border-bottom: 2px solid var(--link-hover);
   border-right:  2px solid  var(--link-hover);
 }
 
 
-.education-content:last-child, .exprience:last-child .exprience-info, .certificate, .blog-card:last-child {
+.education-content:last-child, .exprience:last-child .exprience-info, .certificate, .blog-card{
   border-bottom: 2px solid #00bfff;
   border-right:  2px solid  #00bfff;
 }
@@ -339,12 +340,9 @@ li {
   font-size: 40px;
 }
 
-
-
-
-
-
-
+.contact-container {
+  margin-top: 50px
+}
 
 .contact-container form input,
 #message {
@@ -431,7 +429,7 @@ li {
 }
 
 .contact-info p:nth-child(2) {
-  color: var(--text-color)
+  color: var(--heading)
 }
 
 .contact-info p:last-child {
@@ -951,6 +949,9 @@ button:focus {
   .d-grid-1 {
     grid-template-columns: 1fr
   }
+  .color-customizer {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -981,6 +982,29 @@ button:focus {
     top: 0;
     left: 0;
   }
+  .blog-card, .blog-tools {
+    display: block;
+  }
+  .blog-img img {
+    width: 80%;
+    position: relative;
+    left: 10%;
+  }
+  .blog-date {
+    margin-top: 0;
+    font-size: 36px
+  }
+  .blog-date p:first-child {
+    font-size: 68px;
+  }
+  .blog-date p:last-child {
+    margin-top: -50px
+  }
+  .blog-tools span {
+    font-size: 20px;
+    margin-right: 5px
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
