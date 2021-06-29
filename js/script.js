@@ -92,12 +92,21 @@ $(document).ready(function () {
 
 
 
-    $(".more-info-btn" ).each(function() {
+    $(".more-info-btn").each(function() {
         $(this).click(function () {
+        	        $(this).parent().parent().slideToggle("slow");
+
+        $(".blog-card").slideToggle("slow");	
     	$(this).parent().parent().find(".blog-more-info").slideToggle('slow');
     	$(this).parent().toggleClass('rotate');
     })
     });
+
+    $(".like-btn").each(function() {
+    	$(this).click(function () {
+    		$(this).toggleClass('liked')
+    	})
+    })
 
 
 });
