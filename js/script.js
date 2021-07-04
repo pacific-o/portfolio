@@ -40,8 +40,10 @@ $('.resume-link').click((e) =>
 	toggleCard(e)
 )
 
-$('.card-closer').click((e) =>
-	toggleCard(e)
+$('.card-closer').click((e) => {
+	toggleCard(e);
+	self.location = "file:///home/alireza/Documents/web.design/projects/portfolio/index.html";
+}
 )
 
 
@@ -94,9 +96,7 @@ $(document).ready(function () {
 
     $(".more-info-btn").each(function() {
         $(this).click(function () {
-        	        $(this).parent().parent().slideToggle("slow");
-
-        $(".blog-card").slideToggle("slow");	
+        $('.blog-card').not($(this).parent().parent()).toggle("slow");
     	$(this).parent().parent().find(".blog-more-info").slideToggle('slow');
     	$(this).parent().toggleClass('rotate');
     })
