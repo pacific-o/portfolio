@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
   --white: #fff;
-  --body-bg: #f2f2f2;
-  --card-bg: #c2c2d6;
-  --light-color: #c2c2d6;
+  --primary-bg: #f2f2f2;
+  --main-color: #c2c2d6;
   --btn-color: #8197b1;
-  --text-color: #c2c2d6;
   --link-color: #9494b8;
-  --dark-color: #666699;
+  --secondary-color: #666699;
   --link-hover: #ff9900;
   --heading: #52527a;
+  --secondary-bg: #33334d;
+  --overlay-bg-dark : #1e1e2d ;
+  --overlay-bg-light : #33334d;
 }
 
 * {
@@ -28,7 +29,7 @@ body {
 
 .body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--body-bg);
+  background-color: var(--primary-bg);
   position: relative;
 }
 
@@ -40,7 +41,7 @@ li {
   position: absolute;
   top: 10%;
   left: 0;
-  background-color: #33334d;
+  background-color: var(--secondary-bg);
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   z-index: 10
@@ -59,6 +60,11 @@ li {
 
 .color-options li {
   cursor: pointer;
+  transition: all .2s
+}
+
+.color-options li:hover {
+  transform: scale(1.2);
 }
 
 .main-container {
@@ -92,7 +98,7 @@ li {
   width: 40%;
   border: 3px solid #a3a3c2;
   border-radius: 30px;
-  color: var(--dark-color);
+  color: var(--secondary-color);
   font-size: 18px;
   transform: translateX(-100%);
   transition: transform .8s ease-in-out;
@@ -236,7 +242,7 @@ li {
 }
 
 .education-content span {
-  color: var(--dark-color)
+  color: var(--secondary-color)
 }
 
 .blog-card-container h2 {
@@ -270,7 +276,7 @@ li {
 }
 
 .blog-author {
-  border-bottom: 2px solid var(--text-color)
+  border-bottom: 2px solid var(--main-color)
 }
 
 .blog-author img {
@@ -420,13 +426,13 @@ li {
 }
 
 .contact-info {
-  background-color: var(--card-bg)
+  background-color: var(--main-color)
 }
 
 .contact-info p:first-child {
   font-size: 26px;
   color: var(--white);
-  background-color: var(--dark-color)
+  background-color: var(--secondary-color)
 }
 
 .contact-info p:nth-child(2) {
@@ -438,7 +444,7 @@ li {
 }
 
 #submit {
-  background-color: var(--card-bg)
+  background-color: var(--main-color)
 }
 
 #name,
@@ -461,7 +467,7 @@ li {
   top: -2px;
   font-size: 16px !important;
   width: 70%;
-  background: var(--dark-color);
+  background: var(--secondary-color);
   color: var(--white);
   padding: 10px 0;
   box-shadow: 2px 2px 5px #888888
@@ -472,7 +478,7 @@ li {
   position: absolute;
   display: block;
   bottom: -1em;
-  border: 20px solid var(--dark-color);
+  border: 20px solid var(--secondary-color);
   z-index: -1;
 }
 
@@ -501,12 +507,12 @@ li {
   right: 0;
   top: 5%;
   border-style: none;
-  background-color: var(--dark-color);
+  background-color: var(--secondary-color);
   color: var(--white)
 }
 
 .card-closer:hover {
-  color: var(--light-color)
+  color: var(--main-color)
 }
 
 .exprience {
@@ -517,7 +523,7 @@ li {
 .priod {
   width: 140px;
   height: 120px;
-  background-color: var(--dark-color);
+  background-color: var(--secondary-color);
   color: var(--white);
   border: 2px solid lightgray;
   z-index: 1
@@ -528,7 +534,7 @@ li {
   position: absolute;
   display: block;
   border: 7px solid;
-  border-color: var(--dark-color) transparent transparent var(--dark-color);
+  border-color: var(--secondary-color) transparent transparent var(--secondary-color);
   bottom: -14px;
   left: 126px;
 }
@@ -549,7 +555,7 @@ li {
 
 .exprience-info p,
 .education-content p {
-  color: var(--dark-color)
+  color: var(--secondary-color)
 }
 
 .certificate-content {
@@ -566,11 +572,11 @@ li {
 }
 
 .certificate p:last-child {
-  color: var(--dark-color)
+  color: var(--secondary-color)
 }
 
 .date {
-  background-color: var(--dark-color);
+  background-color: var(--secondary-color);
   color: var(--white)
 }
 
@@ -580,7 +586,7 @@ li {
   left: 0;
   width: 65%;
   z-index: 2;
-  color: var(--text-color);
+  color: var(--main-color);
 }
 
 .resume-menu-sm {
@@ -625,7 +631,7 @@ li {
 }
 
 .overlay {
-  background: linear-gradient(to right, #33334d, #1e1e2d);
+  background: linear-gradient(to right, var(--overlay-bg-light), var(--overlay-bg-dark));
   height: 100%;
   color: var(--white);
   position: relative;
@@ -706,7 +712,7 @@ li {
 #info {
   font-size: 18px;
   color: var(--btn-color);
-  border-bottom: 2px solid var(--light-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
 #about-me:hover,
@@ -793,7 +799,7 @@ button:focus {
 }
 
 .skill-card p {
-  color: var(--light-color)
+  color: var(--main-color)
 }
 
 .my-info ul li span {
@@ -870,7 +876,7 @@ button:focus {
 }
 
 .resume-menu ul {
-  border: 3px solid var(--light-color);
+  border: 3px solid var(--main-color);
   border-radius: 30px;
 }
 
@@ -880,7 +886,7 @@ button:focus {
 
 .resume-menu ul li:hover .qoute {
   opacity: 1;
-  color: var(--text-color)
+  color: var(--main-color)
 }
 
 .resume-menu ul li:hover,
@@ -930,7 +936,7 @@ button:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--card-bg);
+  background: var(--main-color);
   border-radius: 10px;
 }
 

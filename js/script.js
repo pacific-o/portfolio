@@ -11,6 +11,25 @@ const resumeCardsContainer = document.getElementById('resume-cards-container');
 
 
 
+
+
+function setStyleSheet(url){
+       var stylesheet = document.getElementById("stylesheet");
+       stylesheet.setAttribute('href', url);
+}
+
+$('#light-mode').click(() =>
+	setStyleSheet('./style/light-style.css')
+)
+
+$('#dark-mode').click(() =>
+	setStyleSheet('./style/dark-style.css')
+)
+
+
+
+
+
 infoBtn.addEventListener('click', () =>
 	container.classList.add('right-panel-active')
 );
@@ -42,7 +61,6 @@ $('.resume-link').click((e) =>
 
 $('.card-closer').click((e) => {
 	toggleCard(e);
-	self.location = "file:///home/alireza/Documents/web.design/projects/portfolio/index.html";
 }
 )
 
