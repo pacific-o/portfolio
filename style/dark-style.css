@@ -2,13 +2,13 @@
 :root {
   --white: #fff;
   --primary-bg: #f2f2f2;
+  --secondary-bg: #33334d;
   --main-color: #c2c2d6;
   --btn-color: #8197b1;
   --link-color: #9494b8;
   --secondary-color: #666699;
   --link-hover: #ff9900;
   --heading: #52527a;
-  --secondary-bg: #33334d;
   --overlay-bg-dark : #1e1e2d ;
   --overlay-bg-light : #33334d;
 }
@@ -170,7 +170,7 @@ li {
   height: 100%;
   position: absolute;
   color: var(--heading);
-  background-color: #4376d6;
+  background-color: var(--secondary-bg);
   opacity: 0;
   transition: all 1.5s;
   overflow-y: scroll;

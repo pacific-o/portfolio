@@ -2,15 +2,15 @@
 :root {
   --white: #fff;
   --primary-bg: #f2f2f2;
-  --secondary-bg: #8c9ba6;
+  --secondary-bg: #00cc5c;
   --main-color: #c2c2d6;
-  --btn-color: #8197b1;
-  --link-color: #9494b8;
+  --btn-color: #d1d1e0;
+  --link-color: #d1d1e0;
   --secondary-color: #666699;
-  --link-hover: #eee2dc;
+  --link-hover: #ffcb0a;
   --heading: #52527a;
-  --overlay-bg-dark : #9aa7b1;
-  --overlay-bg-light : #c2cad0;
+  --overlay-bg-dark : #009743;
+  --overlay-bg-light : #00cc5c;
 }
 
 * {
@@ -48,7 +48,7 @@ li {
 }
 
 .color-header {
-  color: var(--link-hover);
+  color: var(--link-color);
   font-size: 24px
 }
 
@@ -237,8 +237,8 @@ li {
 
 
 .education-content:last-child, .exprience:last-child .exprience-info, .certificate, .blog-card{
-  border-bottom: 2px solid var(--link-hover);
-  border-right:  2px solid  var(--link-hover);
+  border-bottom: 2px solid #58da92;
+  border-right:  2px solid  #58da92;
 }
 
 .education-content span {
@@ -348,7 +348,12 @@ li {
   width: 75px;
   border-radius: 50%;
   font-size: 40px;
-  background-color: var(--secondary-bg)
+  background-color: var(--secondary-bg);
+  color: var(--white)
+}
+
+.blog-info-btn button:hover {
+  color: var(--link-hover)
 }
 
 .contact-container form input,
@@ -426,8 +431,9 @@ li {
   opacity: 0;
 }
 
-.contact-info {
-  background-color: var(--main-color)
+.contact-info, #submit {
+  background-color: var(--primary-bg);
+  border: 2px solid gray
 }
 
 .contact-info p:first-child {
@@ -442,10 +448,6 @@ li {
 
 .contact-info p:last-child {
   color: gray
-}
-
-#submit {
-  background-color: var(--main-color)
 }
 
 #name,
@@ -494,7 +496,7 @@ li {
   position: absolute;
   display: block;
   border-style: solid;
-  border-color: #4e5b65 transparent transparent transparent;
+  border-color: #009743 transparent transparent transparent;
   bottom: -1em;
 }
 
@@ -877,7 +879,7 @@ button:focus {
 }
 
 .resume-menu ul {
-  border: 3px solid var(--secondary-bg);
+  border: 3px solid var(--main-color);
   border-radius: 30px;
 }
 
@@ -937,7 +939,7 @@ button:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--main-color);
+  background: #58da92;
   border-radius: 10px;
 }
 

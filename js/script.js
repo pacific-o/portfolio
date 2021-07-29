@@ -26,6 +26,10 @@ $('#dark-mode').click(() =>
 	setStyleSheet('./style/dark-style.css')
 )
 
+$('#green-mode').click(() =>
+	setStyleSheet('./style/green-style.css')
+)
+
 
 
 
