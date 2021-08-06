@@ -10,12 +10,9 @@ const resumeEl = document.getElementById("resume-menu");
 const resumeCardsContainer = document.getElementById('resume-cards-container');
 
 
-
-
-
-function setStyleSheet(url){
-       var stylesheet = document.getElementById("stylesheet");
-       stylesheet.setAttribute('href', url);
+function setStyleSheet(url) {
+	var stylesheet = document.getElementById("stylesheet");
+	stylesheet.setAttribute('href', url);
 }
 
 $('#light-mode').click(() =>
@@ -30,8 +27,13 @@ $('#green-mode').click(() =>
 	setStyleSheet('./style/green-style.css')
 )
 
+$('#blue-mode').click(() =>
+	setStyleSheet('./style/blue-style.css')
+)
 
-
+$('#yellow-mode').click(() =>
+	setStyleSheet('./style/yellow-style.css')
+)
 
 
 infoBtn.addEventListener('click', () =>
@@ -65,8 +67,7 @@ $('.resume-link').click((e) =>
 
 $('.card-closer').click((e) => {
 	toggleCard(e);
-}
-)
+})
 
 
 function toggleCard(e) {
@@ -111,28 +112,23 @@ $(document).ready(function () {
 
 
 	$(".color-customizer").hover(function () {
-		$(".color-options").slideToggle('slow');
-   })
+		$(".color-options").slideToggle('fast');
+	})
 
 
+	$(".more-info-btn").each(function () {
+		$(this).click(function () {
+			$('.blog-card').not($(this).parent().parent()).toggle("slow");
+			$(this).parent().parent().find(".blog-more-info").slideToggle('slow');
+			$(this).parent().toggleClass('rotate');
+		})
+	});
 
-    $(".more-info-btn").each(function() {
-        $(this).click(function () {
-        $('.blog-card').not($(this).parent().parent()).toggle("slow");
-    	$(this).parent().parent().find(".blog-more-info").slideToggle('slow');
-    	$(this).parent().toggleClass('rotate');
-    })
-    });
-
-    $(".like-btn").each(function() {
-    	$(this).click(function () {
-    		$(this).toggleClass('liked')
-    	})
-    })
+	$(".like-btn").each(function () {
+		$(this).click(function () {
+			$(this).toggleClass('liked')
+		})
+	})
 
 
 });
-
-
-
-

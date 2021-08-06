@@ -9,8 +9,8 @@
   --secondary-color: #666699;
   --link-hover: #ff9900;
   --heading: #52527a;
-  --overlay-bg-dark : #1e1e2d ;
-  --overlay-bg-light : #33334d;
+  --overlay-bg-dark: #1e1e2d;
+  --overlay-bg-light: #33334d;
 }
 
 * {
@@ -76,7 +76,7 @@ li {
   position: relative;
   overflow: hidden;
   height: 90vh;
-  box-shadow: 0 0 100px -5px rgba(0,0,0,.25);
+  box-shadow: 0 0 100px -5px rgba(0, 0, 0, .25);
 }
 
 .child {
@@ -225,20 +225,24 @@ li {
   box-shadow: 1px 1px 5px lightgray;
 }
 
-.education-content:nth-child(2), .exprience:nth-child(2) .exprience-info {
-  border-bottom:  2px solid  #ff0000;
-  border-right:  2px solid  #ff0000;
+.education-content:nth-child(2),
+.exprience:nth-child(2) .exprience-info {
+  border-bottom: 2px solid #ff0000;
+  border-right: 2px solid #ff0000;
 }
 
-.education-content:nth-child(3), .exprience:nth-child(3) .exprience-info {
+.education-content:nth-child(3),
+.exprience:nth-child(3) .exprience-info {
   border-bottom: 2px solid var(--link-hover);
-  border-right:  2px solid  var(--link-hover);
+  border-right: 2px solid var(--link-hover);
 }
 
-
-.education-content:last-child, .exprience:last-child .exprience-info, .certificate, .blog-card{
+.education-content:last-child,
+.exprience:last-child .exprience-info,
+.certificate,
+.blog-card {
   border-bottom: 2px solid #00bfff;
-  border-right:  2px solid  #00bfff;
+  border-right: 2px solid #00bfff;
 }
 
 .education-content span {
@@ -270,9 +274,9 @@ li {
   position: absolute;
   top: -30px;
   left: 20px;
-  -webkit-box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.75);
-  box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.75)
+  -webkit-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.75)
 }
 
 .blog-author {
@@ -287,7 +291,8 @@ li {
   display: none;
 }
 
-.blog-more-info, .blog-tools {
+.blog-more-info,
+.blog-tools {
   grid-column: 1/3;
 }
 
@@ -295,7 +300,6 @@ li {
   display: grid;
   grid-template-columns: auto 40px 40px 40px 40px;
   grid-gap: 5px
-
 }
 
 .blog-date {
@@ -341,7 +345,7 @@ li {
 .blog-info-btn {
   position: absolute;
   right: 30px;
-  bottom:-35px;
+  bottom: -35px;
 }
 
 .blog-info-btn button {
@@ -683,7 +687,7 @@ li {
 
 .nav-link {
   color: var(--link-color);
-    font-size: 24px
+  font-size: 24px
 }
 
 .nav-link:hover {
@@ -705,7 +709,6 @@ li {
 .resume-btn.translate {
   margin-top: 0px
 }
-
 
 #about-me,
 #resume-btn,
@@ -989,7 +992,8 @@ button:focus {
     top: 0;
     left: 0;
   }
-  .blog-card, .blog-tools {
+  .blog-card,
+  .blog-tools {
     display: block;
   }
   .blog-img img {
@@ -1008,9 +1012,8 @@ button:focus {
     margin-top: -50px
   }
   .blog-tools span {
-  margin-right: 10px
-}
-
+    margin-right: 10px
+  }
 }
 
 @media only screen and (max-width: 480px) {

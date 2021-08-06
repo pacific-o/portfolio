@@ -2,15 +2,15 @@
 :root {
   --white: #fff;
   --primary-bg: #f2f2f2;
-  --secondary-bg: #04ae70;
+  --secondary-bg: #a6b0d8;
   --main-color: #c2c2d6;
   --btn-color: #d1d1e0;
   --link-color: #d1d1e0;
   --secondary-color: #666699;
-  --link-hover: #ffcb0a;
+  --link-hover: #5f70b9;
   --heading: #52527a;
-  --overlay-bg-dark: #049560;
-  --overlay-bg-light: #04ae70;
+  --overlay-bg-dark: #659dbd;
+  --overlay-bg-light: #82afc9;
 }
 
 * {
@@ -241,8 +241,8 @@ li {
 .exprience:last-child .exprience-info,
 .certificate,
 .blog-card {
-  border-bottom: 2px solid #58da92;
-  border-right: 2px solid #58da92;
+  border-bottom: 2px solid var(--secondary-bg);
+  border-right: 2px solid var(--secondary-bg);
 }
 
 .education-content span {
@@ -501,7 +501,7 @@ li {
   position: absolute;
   display: block;
   border-style: solid;
-  border-color: #009743 transparent transparent transparent;
+  border-color: #5f70b9 transparent transparent transparent;
   bottom: -1em;
 }
 
@@ -943,7 +943,7 @@ button:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #58da92;
+  background: var(--secondary-bg);
   border-radius: 10px;
 }
 
